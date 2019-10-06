@@ -1,15 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <UserSecretsId>aspnet-HelloWorld-63406B13-31FA-4452-92D3-BB9D179F4E72</UserSecretsId>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <ApplicationInsightsResourceId>/subscriptions/10b6ae00-6ee3-4cf9-9338-ffced24c8c04/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/HelloWorld</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/10b6ae00-6ee3-4cf9-9338-ffced24c8c04/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/HelloWorld</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
