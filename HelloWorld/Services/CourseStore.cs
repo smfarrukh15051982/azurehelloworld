@@ -19,7 +19,7 @@ namespace HelloWorld.Services
             var uri = new Uri("https://cosmoshelloworld.documents.azure.com:443/");
             var key = "Aq3gCBspDwoARt1nCQnh6kQsDu3IBhSdWPouSwKyvgZb9Bk04ngULUX3A94JTIld90qRRNHrwSC1nGC4fE2jvw==";
             client = new DocumentClient(uri, key);
-            coursesLink = UriFactory.CreateDocumentCollectionUri("pshelloazure", "courses");
+            coursesLink = UriFactory.CreateDocumentCollectionUri("cosmosdbhelloworld", "courses");
         }
 
         public async Task InsertCourses(IEnumerable<Course> courses)
