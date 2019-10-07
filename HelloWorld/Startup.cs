@@ -49,6 +49,7 @@ namespace HelloWorld
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<CourseStore>();
+            services.AddSingleton<ImageStore>();
             services.AddMvc();
         }
 
